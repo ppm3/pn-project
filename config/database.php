@@ -35,7 +35,7 @@ return [
 
     'connections' => [
             'mongodb' => [
-                'driver' => 'mongodb',
+                'driver' => 'mongoDB',
                 'dsn' => env('MONGO_DB_DSN', 'mongodb://localhost:6000'),
                 'database' => env('MONGO_DB_DATABASE', 'psBoard'),
             ],

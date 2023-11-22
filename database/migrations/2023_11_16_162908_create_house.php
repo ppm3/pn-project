@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('house', function (Blueprint $collection) {
+        Schema::create('houses', function (Blueprint $collection) {
             $collection->id();
             $collection->enum('sector', ['A','B','C','D','E','F']);	
             $collection->number('number');
