@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('announcement', function (Blueprint $collection) {
+        Schema::create('announcements', function (Blueprint $collection) {
             $collection->id();
             $collection->string('title');
             $collection->string('description');
             $collection->string('url');
             $collection->timestamp('start_date');
             $collection->timestamp('end_date');
+            $collection->string('user_id');
             $collection->enum('status',['active', 'inactive', 'deleted', 'suspended']);
             $collection->timestamp('created_at')->useCurrent();
             $collection->timestamp('updated_at')->useCurrent();

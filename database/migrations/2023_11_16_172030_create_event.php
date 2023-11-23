@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('event', function (Blueprint $collection) {
+        Schema::create('events', function (Blueprint $collection) {
             $collection->id();
             $collection->string('title');
             $collection->string('description');	
