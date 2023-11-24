@@ -20,5 +20,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
+        view()->composer('admin.layouts.app', function ($view) {
+            $view->with('titleAdmin', 'Admin :: Pasaje Navara Board');
+            $view->with('descriptionAdmin', 'Administrador que permite colocar información para los vecinos de Pasaje Navarra');
+        });
     }
 }
